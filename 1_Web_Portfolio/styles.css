@@ -1,0 +1,135 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   
+}
+
+.text-changer {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    box-sizing: content-box;
+    display:grid;
+    height: 90px;
+    border-radius: 8px;
+}
+.roles-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 0.5rem;
+}
+.role-inner {
+    display: flex;
+    flex-direction: column;
+    animation: role-change 8s infinite;
+}
+.role-inner span {
+    height: 50px;
+    line-height: 90px;
+}
+.role1, .role2, .role3, .role4, .role5 {
+    display: block;
+    height: 100%;
+    padding-top: 4px;
+}
+.role1 {
+    color:cornflowerblue
+}
+.role3 {
+    color: darkorchid;
+}
+.role4 {
+    color: rgb(226, 39, 39);
+}
+.role5 {
+    color: rgb(5, 87, 5);
+}
+
+@keyframes role-change {
+    25% { transform: translateY(-50px); }
+    50% { transform: translateY(-100px); }
+    75% { transform: translateY(-150px); }
+    100% { transform: translateY(-200px); }
+}
+
+
+header, main, footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main, section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg)
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    padding-top : 0.5rem;
+    gap: 1rem;
+}
