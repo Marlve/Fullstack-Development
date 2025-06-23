@@ -14,6 +14,8 @@
         <nav>
             <a target="_blank" href="https://github.com/Marlve"><i class="fa-brands fa-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/derich-marlve-7a442a2a2/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/derichmarlve/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@Kyota"><i class="fa-brands fa-youtube"></i></a>
         </nav>
     </header>
     <main>
@@ -22,36 +24,41 @@
                 <h1 class="intro-text">Hey, I am</h1>
                 <div class="roles-container">
                     <div class="role-inner">
-                        <span class="role1"><h1>Derich.</h1></span>
-                        <span class="role3"><h1>a Developer</h1></span>
-                        <span class="role4"><h1>a Content Creator</h1></span>
-                        <span class="role5"><h1>a Video Editor</h1></span>
-                        <span class="role1"><h1>Derich.</h1></span>
+                        <span class="role1">Derich.</span>
+                        <span class="role2">a Developer.</span>
+                        <span class="role3">a Content Creator.</span>
+                        <span class="role4">a Video Editor.</span>
+                        <span class="role1">Derich.</span>
                     </div>
                 </div>
             </div>
             <h5 class="intro-description" >
-                Indonesian student currently studying at Monash University.
+                A jack of all trades, I dabble in various fields of technology and creativity. From web development to video editing, I enjoy exploring new challenges and sharing my journey with the world.
             </h5>
             <div class="links-container">
                 <i class="fa-solid link-arrow fa-arrow-right"></i>
-                <a target="_blank" href="mailto:derichmarlve@gmail.com"> Email me</a> 
-                <a target="_blank" href="https://github.com/Marlve">Github</a>
-                <a target="_blank" href="https://www.linkedin.com/in/derich-marlve-7a442a2a2/">LinkedIn</a>
+                <a target="_blank" href="mailto:derichmarlve@gmail.com"> <i class="fa-solid fa-envelope"></i> Email me </a> 
             </div>
 
             <div id="play-game">
-                <button onclick="">Play Game?</button>
+                <button onclick="playGame()">Play Game?</button>
             </div>
             <div style="display: none;" class="color-div">
                 <h4>
                     Pick a color
                 </h4>
                     <p style="display: none;">aww you've ruined it.</p>
-                    <input type="color" id="color-picker" onchange="" value="#0084ff"/>
-                    <button onclick="" style="display: none;">Reset</button>
+                    <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff"/>
+                    <button onclick="resetColor()" style="display: none;">Reset</button>
             </div>
         </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <p><i class="fa-solid crown-achievement fa-crown"></i> - Gained 800k+ Views in Self Managed <a href="https://www.youtube.com/@Kyota" target="_blank">YouTube Channel</a></p>
+            <p><i class="fa-solid eye-achievement fa-eye"></i> - Gained 1 Million+ Views on Edited Videos for Clients Accounts</p>
+        </section>
+
 
         <section>
             <h2>Skills</h2>
@@ -64,20 +71,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>Python</td>
+                        <td>Data Structures</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>Java</td>
+                        <td>OOP Programming</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>Design</td>
+                        <td>Figma | Adobe Photoshop</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td>Video Editing</td>
+                        <td>Adobe Premiere Pro | Adobe After Effects</td>
                     </tr>
                 </tbody>
             </table>
@@ -88,21 +95,97 @@
             <div class="cards-grid">
                 <div class="project-card">
                     <div>
-                        <p>What's good</p>
-                        <h4>Project Name</h4>
+                        <p>Mar 1, 2025</p>
+                        <h4>Most Recent Client's Edit</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary">
-                                <p>Technologies</p>
+                                <p>Adobe Premiere Pro</p>
                             </div>
                         </div>
+                        <p class="project-description">The current highest viewed video I have edited for a client's account.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://youtu.be/1kHkWN3u9jk">Watch Video.</a>
+                        </div>
+                    </div>
+                    <div class="vid-div">
+                        <iframe width="1538" height="697" src="https://www.youtube.com/embed/1kHkWN3u9jk" title="Showing how DUAL WIELDING Works + How to Get in Rune Slayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Jan 9, 2025</p>
+                        <h4>Most Viewed Client's Edit (237k+ views)</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Adobe Premiere Pro</p>
+                            </div>
+                        </div>
+                        <p class="project-description">The current highest viewed video I have edited for a client's account.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Pr57PgpGOu8">Watch Video.</a>
+                        </div>
+                    </div>
+                    <div class="vid-div">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/Pr57PgpGOu8" title="Which Domain Expansion You Should GET in Jujutsu Infinite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>Jul 23, 2023</p>
+                        <h4>Most Viewed Video</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Davinci Resolve</p>
+                            </div>
+                        </div>
+                        <p class="project-description">The highest achieved view count for my own account.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://youtu.be/g3FsIR7no3A">Watch Video.</a>
+                        </div>
+                    </div>
+                    <div class="vid-div">
+                        <iframe width="1538" height="697" src="https://www.youtube.com/embed/g3FsIR7no3A" title="The BEST guide for Thorian! | Arcane Lineage" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>    
         </section>
+
     </main>
     <footer>
-        <p>By <a href="https://www.instagram.com/notderich/" target="_blank">Derich</a> 😴, the link to this repo is <a href="https://github.com/Marlve/Fullstack-Development" target="_blank" >here.</a> </p>
+        <p>By <a href="https://www.instagram.com/derichmarlve/" target="_blank">Derich</a> 😴, the link to this repo is <a href="https://github.com/Marlve/Fullstack-Development" target="_blank" >here.</a> </p>
     </footer>
-    <script></script>
+    <script>
+        const body = document.querySelector('body');
+        const colorInput = document.getElementById('color-picker');
+        const colorDiv = document.querySelector('.color-div');
+        const hiddenText = document.querySelector('.color-div p');
+        const resetButton = document.querySelector('.color-div button');
+        const playButton = document.querySelector('play-game');
+
+        function playGame() {
+            colorDiv.style.display = 'block';
+            playButton.style.display = 'none';
+        }
+
+        function changeColor() {
+            const selectedColor = colorInput.value;
+            body.style.background = selectedColor;
+            hiddenText.style.display = 'block';
+            resetButton.style.display = 'block';
+            colorInput.style.display = 'none';
+        }
+
+        function resetColor() {
+            body.style.background = '#05070f';
+            colorInput.style.display = 'block';
+
+            hiddenText.style.display = 'none';
+            resetButton.style.display = 'none';
+            colorDiv.style.display = 'none';
+        }
+
+    </script>
 </body>
 </html>
